@@ -1,0 +1,19 @@
+Parâmetros na requisição
+
+
+
+Métodos HTTP
+
+GET - Receber Dados ( Parâmetros passados na URL )
+POST - Cadastrar, Submeter ( Parâmetros escondidos no corpo da mensagem )
+DELETE - Deletar ( utiliza a parametros da URL para obter um id de um determinado recurso para deleção )
+PUT - Atualizar ( utiliza a parametros da URL para obter um id de um determinado recurso para atualização,
+e os parâmetros enviados vão no corpo da requisição )
+PATCH - Atualizar campos que foram alterados ( Envia no corpo da requisição somente o que foi alterado, utiliza algum propriedade da url, como um id )
+
+
+Exemplos de URL
+
+http://dominio.com.br/user?id=2 ( Requisição por queries ) req.query
+
+http://dominio.com.br/user/2 de http://dominio.com.br/:id ( Requisição por parâmetro ) req.param ( necessita estabelecer regras no servidor em relação à posição do id)

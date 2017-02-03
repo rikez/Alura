@@ -1,0 +1,44 @@
+Depurando uma requisição
+
+Chrome tools e Firebug
+
+Códigos de Resposta
+
+20x - Requisição Aceita ( Sucesso )
+  - 200 => OK Siginifica que a requisição obteve sucesso.
+  - 201 => Created Significa que algum POST, na criação de um novo cadastro ou algo do tipo obteve sucesso.
+  - 202 => Accepted Requisição aceita, porém o processamento de algum serviço não foi completado.
+  - 203 =>
+  - 204 => No Content Utilizado em uma requisição REST, na deleção de dados, pois não devolvem conteúdo.
+  - 205
+  - 206
+30x - Redirecionamento
+  - 300 =>
+  - 301 => Moved Permanently, utilizado quando fazemos redirecionamento de subdominios, como www para nao www, ou vice-versa
+  - 302 => Moved Temporarily,
+  - 303
+  - 304
+  - 305
+  - 306
+  - 307
+40x - Erro do Cliente
+  - 400 Bad request => Utilizado quando o cliente manda alguma informação inconsistente com o servidor, gerando uma bad request.
+  - 401 Unauthorized => Requer autenticação do usuário. E o usuário entrou com dados incorretos.
+  - 402
+  - 403 Forbidden => Acesso proibido. Conteúdo privado.
+  - 404 Not Found => Conteúdo não encontrado, URL não encontrada.
+50x - Erro do Servidor
+  - 500 Internal Server Error => Erro encontrado no servidor, impedindo que uma requisição seja completada.
+  - 502 Bad Gateway => Bug na aplicação, Erro ao procurar porta da aplicação (Nginx)
+  - 503 Service Unavailable => Servidor fora do ar.
+  - 504 Gateway Timeout => Quando uma aplicação não devolve uma resposta, gerando uma gateway timeout.
+
+  Utilizando telnet e curl
+
+  Telnet - estabelec uma conexão TCP permitindo o envio de dados via terminal.
+
+  telnet http://dominio.com.br
+  curl -I http://dominio.com.br
+
+  GET / HTTP/1.1
+  HOST: dominio.com.br

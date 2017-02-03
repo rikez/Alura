@@ -1,0 +1,40 @@
+HTTP Fundamentos da Web
+
+O que é o HTTP?
+  Sigla - Hypertext Transfer Protocol!
+  Objetivo - Estabelecer regras de comunicação!
+
+Definição: Protocolo de comunicação da Web
+
+Características:
+          Sempre há uma interação(comunicação) cliente-servidor!
+          Existem Regras de Comunicação!
+          Texto puro -> Text/plain
+          Stateless ->  não sabe dados das requisições anteriores.
+
+Outros modelos de comunicação: P2P(Torrents) - Peer to Peer, FTP, SMTP, SFTP, SSH.
+
+
+    Diagrama
+
+    (Navegador, Postman, Etc)
+           <<Cliente>>
+               |
+               |
+               |
+          (Internet)
+            <<HTTP>>
+               |
+               |
+               |
+  (Nginx, Apache, Tomcat, Tengine)
+  <<Servidor Php|JAVA|NODEJS|PYTHON...>>
+               |
+               |
+               |
+           (SQL/NoSQL)
+               |
+               |
+               |
+ (MySQL/Oracle/Maria/MongoDB/SQlite)
+       <<banco de dados>>

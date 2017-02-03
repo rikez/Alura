@@ -1,0 +1,22 @@
+A web segura - HTTPS
+
+HTTP é text/plain -> texto puro.
+A Comunicação passa por diversos intermediários antes de devolver a response.
+Entretanto, é inseguro um sistema que envovle autenticação utilizar HTTP, pois a transmissão dos dados é texto puro, e não criptografado.
+
+HTTPS
+ Objetivo: Criptografar a transmissão de dados cliente-servidor.
+ Características:
+
+    Tem uma validade como um passaporte, rg, id.
+    
+    Utiliza certificados( identificação ) emitidos por autoridades confiadas por navegadores.
+
+    Chave pública no lado do cliente para criptografar a transmissão, ou seja, a chave deste lado estará disponível para visualização.
+
+    Chave privada no lado do servidor, porém esta tem de ser assimétrica(matematicamente) com a chave pública, ter um relacionamento, para que possa haver
+    a descriptografia.
+
+    Há também criptografia simétrica, ou seja, as duas chaves são iguais, portanto menos seguro que a assimétrica, porém mais rápido.
+
+    Por último temos a criptografia simétrica/assimétrica, onde as criptografias alternam nas requisições, para não gerar lentidão nas respostas.

@@ -1,0 +1,27 @@
+O cliente pede e o servidor responde
+
+Cliente --- POST ---email e senha AUTH -----> Servidor
+Cliente <---- response 200/401/403 Depende da AUTH, redireciona para alguma rota de acordo com a resposta. ---- Servidor
+
+
+Cliente ---- GET globo.com ------> Servidor globo.com
+Cliente <---- 200 Response =  Conteúdo da página ----- Servidor globo.com
+
+Cliente ----- GET www.weappm.com.br/usuario/1 ------> Servidor WeApp ( Pede o usuario com id 1 )
+Cliente <---- 200 Se Usuario existe, 404 se usuário não existe, se :id não for um número, 400 --- Servidor weappm.com.br
+
+-- Cada requisição é independente e não sabe dos dados das requisições anteriores. ( Stateless )
+
+Quando temos um sistema de autorização, se o usuário existe, o servidor envia um cookie/ token  nos headers/queries.
+
+Posteriormente, como cada requisição é independente, devemos persistir esse token nos headers em outras requisições,
+passando o mesmo para uma localstorage, sessionstorage. Por que? para que o usuário permaneça logado durante um período determinado.
+
+O que é uma session HTTP ?
+  O tempo que um cliente permanece conectado em uma web app.
+
+Cookie
+ São arquivos de texto salvas em cache no navegador do cliente. Foram criados para guardar informações que
+ devem persistir em todo o ciclo de uma aplicação, ou por tempo determinado.
+
+ Uma comunicação HTTP é sempre iniciada pelo cliente, através de uma requisição, afim de obter uma resposta.

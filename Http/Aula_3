@@ -1,0 +1,23 @@
+Endereços sob seu domínio
+
+protocolo://dominio:porta/recurso (URL - Unified Resource Locator);
+DNS -> traduz o domínio para o ip do site.
+Domínio: www.dominio.com.br - Nome do site na web, utilizado para que o usuário não precise digitar o IP do site.
+IP Address: 102.323.133.233
+Porta: 80 (HTTP) 443 (HTTPS)
+
+O DNS é redirecionado para este IP.
+
+CNAME são subdomínio de um domínio.
+então www é um subdomínio.
+
+Utilizamos Apache, Nginx, etc para redirecionar http para https, como também www.domínio.com.br para domínio.com.br
+
+Podemos utilizar diversos subdomínios apontando para servidores diferentes,
+ ou seja, outros IPs, ou outras portas do próprio IP, que estão rodando aplicações diferentes.
+
+Recursos: são caminhos(path) /index, /path
+
+URI =  URL e URN
+
+URL = é uma URI, mas nem toda URI é uma URL
