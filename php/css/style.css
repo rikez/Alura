@@ -1,0 +1,85 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+* {
+  margin:0;
+}
+
+html, body {
+  height: 100%
+}
+
+.page-wrap {
+  min-height:100%;
+  margin-bottom: -50px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.page-footer {
+  padding: 0 !important;
+
+}
+
+.page-footer,  .page-wrap:after{
+  height: 50px;
+}
+
+.valign-wrapper {
+  -webkit-justify-content: center;
+      -ms-justify-content: center;
+          justify-content: center;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.fullheight {
+  min-height: 100% !important;
+}
+
+.position-bt {
+  top: 40px;
+  right: 55px;
+}
+
+.container {
+  width: 90%;
+}
+
+.modal {
+  overflow-y: hidden;
+}
+
+.modal-footer {
+  padding: 0 !important;
+  height: 42px !important;
+}
+
+.product-bt {
+  margin: 0 !important;
+  width: 100%;
+  float: none;
+  height: 42px;
+  line-height: 42px;
+}
+
+.border {
+  width: 100%;
+  border-bottom: 3px solid teal;
+}
